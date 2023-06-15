@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient( to right,#d99043,#b67e3b);
+  display: flex;
+  justify-content: center;
+}
+.container {
+  transform: translate(0, 10%);
+  width: 80vw;
+  height: 89vh;
+  background-color:#3b332c;
+  border-radius: 30px;
+  padding: 5px;
+  border: 6px solid burlywood;
+  display: grid;
+  grid-template-columns: 1fr;
+  box-shadow: 3px 2px 2px burlywood;
+}
+header {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+#cir {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+  justify-self: center;
+  margin-top: 5px;
+}
+
+#rec {
+  width: 50px;
+  height: 8px;
+  background-color: white;
+  border-radius: 20px;
+  justify-self: center;
+}
+
+.scn {
+  margin: 10px;
+  padding: 20px;
+  height: 69vh;
+  border-radius: 10px;
+  background-color: white;
+}
+
+
+label {
+  display: flex;
+  position: relative;
+
+}
+
+#search{
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 10px 0 0px 10px;
+  outline: none;
+  border: none;
+  background-color: rgba(184, 148, 148, 0.436);
+}
+
+#lab{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#sch {
+  background-color:rgb(134, 98, 76);
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  position: absolute;
+  top: 0;  
+  bottom: 0; 
+  right: -10px;
+  padding: 5px;
+  font-weight: bolder;
+  
+}
+#sch:focus{
+  outline: none;
+}
+
+#Temparature{
+  width: 60px;
+  height: 60px;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: black;
+  border-radius: 50%;
+  padding: 100px;
+  background-color: #d88f3586;
+  border: 3px solid #7d4502;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  top: 40%;
+  left: 30%;
+ 
+}
+
+
+#clock{
+  color: black;
+  text-shadow: 2px 2px rgb(171, 97, 97);
+  letter-spacing: 2px;
+  font-size: 1rem;
+}
+
+#displayCity{
+  text-align: center;
+  color:black;
+  text-shadow: 2px 3px rgb(17, 14, 14);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.3rem; 
+}
+#description{
+  text-align: center;
+  color:black;
+  text-shadow:2px 2px 2px black;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width:600px) {
+  #displayCity{
+    font-size: 1.5rem; 
+
+  }
+  
+  #Temparature{
+  
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+    border-radius: 50%;
+    padding: 70px;
+    background-color: #d88f3586;
+    border: 3px solid #7d4502;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    top: 40%;
+    left: 30%;
+   
+  }
+}
